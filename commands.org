@@ -1,0 +1,38 @@
+* HowTo: Install Jekyll
+** Install instructions:
+   - https://jekyllrb.com/docs/installation/other-linux/
+     - sudo apt-get install ruby-full build-essential
+   - Add path to zshrc
+     echo '# Install Ruby Gems to ~/gems' >> ~/.zshrc
+     echo 'export GEM_HOME="$HOME/gems"' >> ~/.zshrc
+     echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.zshrc
+     source ~/.zshrc
+    - gem install jekyll bundler kramdown jemoji
+    - cd /home/pablo/Documents/blog/blog-web-page
+    - rm Gemfile.lock
+    - bundle update
+* HowTo: Log into GitHub
+  - To log into GitHub from command-line:
+    - gh auth login
+      - ? What account do you want to log into?  [Use arrows to move, type to filter]
+        > GitHub.com
+        GitHub Enterprise Server
+         You're already logged into github.com. Do you want to re-authenticate? (y/N) y
+         ? What is your preferred protocol for Git operations? HTTPS
+         ? How would you like to authenticate GitHub CLI? Login with a web browser
+ 
+         ! First copy your one-time code: C645-5F58
+         Press Enter to open github.com in your browser... 
+         Opening in existing browser session.
+         [14587:14587:0100/000000.855974:ERROR:gpu_init.cc(486)] Passthrough is not supported, GL is egl, ANGLE is 
+         ✓ Authentication complete.
+         - gh config set -h github.com git_protocol https
+         ✓ Configured git protocol
+         ✓ Logged in as PabRubio
+* HowTo: Create a Github repository
+
+
+ 
+
+
+
